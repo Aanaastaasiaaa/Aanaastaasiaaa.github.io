@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задание 1 - Разработка пользовательского Web-интерфейса</title>
-    <style>
-        .image-map-container {
-            margin: 20px 0;
-        }
-        .area-hint {
-            font-size: 12px;
-            color: #666;
-            margin-top: 5px;
-        }
-    </style>
+    <title>Ссылки задание 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header id="site-header">
+    <div class="container">
+        <div class="header-top">
+            <div class="ca">
+                <img src="logo.png" alt="logo" width="180">
+            </div>
+            <nav class="main-nav">
+                <a href="http://kubsu.ru">Главная</a>
+                <a href="https://kubsu.ru/university">Об университете</a>
+                <a href="#">Факультеты</a>
+            </nav>
+        </div>
+        <div class="header-bottom">
+
+        </div>
+    </div>
+</header>
+
+<div style="max-width:800px;  margin: 0 auto; margin-top:20px; padding:10px;">
+
 <h1>Задание 1 - Разработка пользовательского Web-интерфейса</h1>
 
 <h2>Нумерованный список гиперссылок</h2>
@@ -39,8 +50,8 @@
         <img src="image1.jpg" alt="Картинка с разными областями" usemap="#car"
              width="300" height="300">
         <map name="car">
-            <area shape="rect" href="https://kubsu.ru/" coords="0,0,1100,1100" >
-            <area shape="circle" href="https://www.kubsu.ru/news" coords="1650,800,550" >
+            <area shape="rect" href="https://kubsu.ru/" coords="0,0,1100,1100" alt="rect">
+            <area shape="circle" href="https://www.kubsu.ru/news" coords="1650,800,550" alt="circle">
         </map>
 
     </li>
@@ -59,6 +70,64 @@
     </li>
     <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
 </ol>
+    <section id="table-section">
+        <h2>Таблица факультетов</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Факультет</th>
+                <th>Декан</th>
+                <th>Количество студентов</th>
+                <th>Аудитории</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Компьютерных технологий и прикладной математики</td>
+                <td>Колотий А.Д.</td>
+                <td>1000</td>
+
+                <td>100-200</td>
+            </tr>
+            <tr>
+                <td>Филологический</td>
+                <td>Сайченко В.В.</td>
+                <td>900</td>
+
+                <td>300-400</td>
+            </tr>
+            <tr>
+                <td>Журналистики</td>
+                <td>Касьянов В.В.</td>
+                <td>1100</td>
+
+                <td>500-600</td>
+            </tr>
+            <tr>
+                <td>Химии и высоких технологий</td>
+                <td>Костырина Т.В.</td>
+                <td>800</td>
+                <td>800-900</td>
+            </tr>
+            <tr>
+                <td>Юридический</td>
+                <td>Потапенко С.В.</td>
+                <td>1200</td>
+
+                <td>1-100</td>
+            </tr>
+            <tr>
+                <td>Физико-технический</td>
+                <td>Строганова Е.В.</td>
+                <td>1000</td>
+
+                <td>600-700</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </section>
+</div>
 
 <h2 id="form">Форма для заполнения</h2>
 <form action="/submit" method="POST">
@@ -121,5 +190,10 @@
 
     <button type="submit">Сохранить</button>
 </form>
+<footer id="site-footer">
+    <div class="container">
+        <p>&copy;2025 Болобан Анастасия. Кубанский Государственный Университет</p>
+    </div>
+</footer>
 </body>
 </html>
