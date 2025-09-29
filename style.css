@@ -75,6 +75,18 @@ table {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.table1
+{
+    margin:0 auto;
+}
+
+.table1 th{
+    background-color:#eee;
+    border:1px solid #000;
+}
+
+
+
 th, td {
     padding: 12px;
     text-align: left;
@@ -85,6 +97,13 @@ th {
     background: #3CB371;
     color: white;
     font-weight: bold;
+}
+.table tr: nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.table tr: nth-child(odd){
+    background-color: #fff;
 }
 
 #site-footer {
