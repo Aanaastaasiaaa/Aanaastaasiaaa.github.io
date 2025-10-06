@@ -12,7 +12,7 @@ body {
 }
 
 #site-header {
-    background-color:#3CB371;
+    background-color: #3CB371;
     color: white;
     width: 100%;
 }
@@ -40,40 +40,9 @@ body {
     transition: color 0.3s ease;
 }
 
-
-
-/*.header-bottom {
-    padding: 20px 0;
-    text-align: center;
+.main-nav a:hover {
+    color: #e0e0e0;
 }
-
-.header-bottom h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
- */
-.main-container {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.links-section {
-    order: 2;
-}
-
-.table-section {
-    order: 1;
-}
-
-
 
 section {
     margin-bottom: 40px;
@@ -125,7 +94,22 @@ tr:nth-child(odd) {
     margin: 10px 0;
 }
 
-@media (max-width: 767px) {
+/* Стили для десктопа (по умолчанию) */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-section {
+    order: 1; /* Ссылки первые на десктопе */
+}
+
+.table-section {
+    order: 2; /* Таблица вторая на десктопе */
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
     .header-top {
         flex-direction: column;
         gap: 15px;
@@ -140,42 +124,32 @@ tr:nth-child(odd) {
 
     .main-nav a {
         padding: 12px;
-
         border-radius: 5px;
     }
 
-    .header-bottom h1 {
-        font-size: 1.8em;
-    }
-
     .content-wrapper {
         display: flex;
         flex-direction: column;
     }
 
-    .table-section {
-        order: 1;
-    }
-
     .links-section {
-        order: 2;
-    }
-}
-
-@media (min-width: 769px) {
-    .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .links-section {
-        order: 1;
-        flex: 1;
+        order: 2; /* Ссылки вторые на мобильных */
     }
 
     .table-section {
-        order: 2;
-        flex: 1;
+        order: 1; /* Таблица первая на мобильных */
+    }
+
+    /* Адаптация таблицы для мобильных */
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
     }
 }
